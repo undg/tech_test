@@ -2,6 +2,16 @@
 
 1. Clone the project, change into the directory and install the dependencies.
 
+Please use
+node version
+```
+16.0.0
+```
+yarn version
+```
+1.22.19
+```
+
 Install dependencies 
 ```bash
 yarn
