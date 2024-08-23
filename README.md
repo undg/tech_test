@@ -1,6 +1,6 @@
 # Using this project
 
-1. Clone the project, change into the directory and install the dependencies.
+Clone the project, change into the directory and install the dependencies.
 
 Please use
 node version
