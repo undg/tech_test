@@ -1,4 +1,4 @@
-## Using this project
+# Using this project
 
 1. Clone the project, change into the directory and install the dependencies.
 
@@ -120,7 +120,7 @@ Monorepo Context:
 The frontend is part of the same monorepo and is already set up with basic functionality.
 
 
-Requirements:
+## Requirements:
 
 Frontend UI:
 Extend the existing UI to include a form with an input field and a submit button.
@@ -137,7 +137,7 @@ State Management: Use React's state management to manage the state of the word-s
 Error Handling: Implement user-friendly error messages if the API returns an error (e.g., invalid input). Prevent form submission for empty strings or non-alphabetic characters.
 
 Styling:
-Go wild, this is your chance to show us your design flare.
+Go wild, this is your chance to show us your design flare. You have creative freedom.
 Ensure the UI is responsive and maintains a consistent look and feel with the rest of the application.
 
 Testing:
