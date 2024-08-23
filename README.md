@@ -27,12 +27,12 @@ Run the project
 yarn dev
 ```
 
-## The task
+# The task
 
-## Time Expectation:
+# Time Expectation:
 We don't expect you to spend more than 1.5 hours on this test. Please commit your work regularly so that we can see your thought process, and we look forward to discussing your approach during the review.
 
-## Task 1: Create a Scrabble Score API (Node.js)
+# Task 1: Create a Scrabble Score API (Node.js)
 Objective:
 Develop a RESTful API within an existing Node.js backend (which is part of a monorepo) to compute the Scrabble score for a given word.
 
@@ -40,7 +40,7 @@ Monorepo Context:
 The monorepo already contains a Node.js backend and a React frontend.
 You will add your new API endpoint to the existing backend.
 
-# Requirements:
+## Requirements:
 How this api should work:
 Create an api that accepts a word and calculates the score. 
 [What is scrabble?](https://en.wikipedia.org/wiki/Scrabble)
@@ -112,7 +112,7 @@ Provide example API requests and responses.
 Commit Regularly:
 As you work through this task, please commit regularly to the repository. These commits will help us understand your approach, thought process, and how you manage your time. Even if you don't fully complete the task, we'll be able to see your progress and how you tackled the problem.
 
-## Task 2: Connect the React Frontend to the Scrabble Score API
+# Task 2: Connect the React Frontend to the Scrabble Score API
 Objective:
 Extend the existing React frontend to interact with the newly created Scrabble Score API, allowing users to input words and view their corresponding Scrabble scores.
 
