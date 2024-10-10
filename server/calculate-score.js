@@ -21,8 +21,8 @@ function calculateScore(word) {
   let score = 0;
   const badChar = [];
 
-  const letters = word.toUpperCase().split("");
-  if (!letters.length) {
+  const letters = word?.toUpperCase().split("");
+  if (!letters?.length) {
     return {word, score: score, err: dict.errNoEmpty };
   }
 
