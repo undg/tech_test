@@ -28,12 +28,11 @@ function calculateScore(word) {
 
   letters.forEach((letter) => {
     const letterScore = letterScores[letter];
-
     if (letterScore === undefined) {
       badChar.push(letter);
-    } else {
-      score += letterScores[letter];
+      return;
     }
+    score += letterScores[letter];
   });
 
   if (badChar.length) {
@@ -41,9 +40,9 @@ function calculateScore(word) {
       score: 0,
       err: `${dict.errBadChars}: ['${badChar.join("', '")}']`,
     };
-  } else {
-    return { score: score };
   }
+
+  return { score: score };
 }
 
 module.exports = calculateScore;
