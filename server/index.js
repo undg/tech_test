@@ -22,5 +22,5 @@ app.listen(3001, () =>
 app.post("/api/scrabble-score", (req, res) => {
   const { word } = req.body;
   const { score, err } = calculateScore(word);
-  res.json({ score, err });
+  res.json({ word, score, err });
 });
