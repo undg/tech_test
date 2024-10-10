@@ -13,9 +13,11 @@ const wordsAtom = atomWithStorage();
 function App() {
   const [word, setWord] = React.useState("");
   const [scores, setScores] = useAtom(wordsAtom);
+  const [error, setError] = React.useState()
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+      setError(undefined)
     const response = await fetch(URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -23,6 +25,12 @@ function App() {
     });
 
     const currentScore = await response.json();
+
+    if(currentScore.err !== undefined) {
+      setError(currentScore.err)
+      return
+    }
+
     setScores((prevScores) =>
       prevScores ? [...prevScores, currentScore] : [currentScore],
     );
@@ -32,11 +40,11 @@ function App() {
     setScores([]);
   };
 
-  console.log(scores);
 
   return (
     <div className="App" data-testid={dict.testid.app}>
       <form onSubmit={handleSubmit}>
+        { error && <span className='error'>{error}</span> }
         <input
           value={word}
           onChange={(e) => setWord(e.target.value)}
