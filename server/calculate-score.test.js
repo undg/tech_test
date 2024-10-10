@@ -3,15 +3,15 @@ const calculateScore = require('./calculate-score');
 
 describe('calculateScore', () => {
   test('calculates correct score', () => {
-    expect(calculateScore('HELLO')).toBe(8);
-    expect(calculateScore('world')).toBe(9);
-    expect(calculateScore('QUIZ')).toBe(22);
+    expect(calculateScore('HELLO')).toBe({score: 8});
+    expect(calculateScore('world')).toBe({score: 9});
+    expect(calculateScore('QUIZ')).toBe({score: 22});
   });
 
   test.skip('handles invalid characters', () => {
-    expect(calculateScore('')).toBe(undefined);
-    expect(calculateScore('hello world')).toBe(undefined);
-    expect(calculateScore('H3LL0')).toBe(undefined);
-    expect(calculateScore('!@#$%')).toBe(undefined);
+    expect(calculateScore('')).toBe({score: 0, err: "word can't be empty"});
+    expect(calculateScore('hello world')).toBe({score: 0, err: "Invalid characters: [' ']"});
+    expect(calculateScore('H3LL0')).toBe({score: 0, err: "Invalid characters: ['3', '0']"});
+    expect(calculateScore('!@#$%')).toBe({score: 0, err: "Invalid characters: ['!', '@', '#', '$', '%']"});
   });
 });
