@@ -23,7 +23,7 @@ function calculateScore(word) {
 
   const letters = word.toUpperCase().split("");
   if (!letters.length) {
-    return { score: score, err: dict.errNoEmpty };
+    return {word, score: score, err: dict.errNoEmpty };
   }
 
   letters.forEach((letter) => {
@@ -37,12 +37,13 @@ function calculateScore(word) {
 
   if (badChar.length) {
     return {
+      word,
       score: 0,
       err: `${dict.errBadChars}: ['${badChar.join("', '")}']`,
     };
   }
 
-  return { score: score };
+  return { word, score: score };
 }
 
 module.exports = calculateScore;
