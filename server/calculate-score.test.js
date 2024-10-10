@@ -8,7 +8,7 @@ describe('calculateScore', () => {
     expect(calculateScore('QUIZ')).toEqual({score: 22});
   });
 
-  test.skip('handles invalid characters', () => {
+  test('handles invalid characters', () => {
     expect(calculateScore('')).toEqual({score: 0, err: "word can't be empty"});
     expect(calculateScore('hello world')).toEqual({score: 0, err: "Invalid characters: [' ']"});
     expect(calculateScore('H3LL0')).toEqual({score: 0, err: "Invalid characters: ['3', '0']"});
