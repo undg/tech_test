@@ -17,7 +17,7 @@ function calculateScore(word) {
   let score = 0
   word.toUpperCase().split('').forEach(letter => score += letterScores[letter])
 
-  return score
+  return {score: score}
 }
 
 module.exports = calculateScore;
