@@ -140,7 +140,7 @@ Functionality:
 Implementation Details:
 - [x] React Components: Modify or create new components as needed to handle the form submission and table rendering.
 - [x] State Management: Use React's state management to manage the state of the word-score pairs.
-- [ ] Ensure the form resets after submission and the new entry is added to the table.
+- [x] Ensure the form resets after submission and the new entry is added to the table.
 - [x] Error Handling: Implement user-friendly error messages if the API returns an error (e.g., invalid input).
 - [ ] Prevent form submission for empty strings or non-alphabetic characters.
 

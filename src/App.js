@@ -34,6 +34,7 @@ function App() {
     setScores((prevScores) =>
       prevScores ? [...prevScores, currentScore] : [currentScore],
     );
+    setWord("")
   };
 
   const handleReset = () => {
