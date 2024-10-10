@@ -97,15 +97,15 @@ J, X = 8
 Q, Z = 10
 
 Edge Cases:
-Ensure the API handles case insensitivity (e.g., "Cabbage" and "cabbage" should return the same score).
-Return an error message if the input word contains non-alphabetic characters.
-Handle empty or null input by returning an appropriate error message.
+- [ ] Ensure the API handles case insensitivity (e.g., "Cabbage" and "cabbage" should return the same score).
+- [ ] Return an error message if the input word contains non-alphabetic characters.
+- [ ] Handle empty or null input by returning an appropriate error message.
 
 Monorepo Integration:
 Folder Structure: Add your API logic under the existing backend folder structure.
-Routing: Integrate the new /api/scrabble-score route into the current routing setup.
-Configuration: Ensure any necessary configurations, such as environment variables or middleware, are correctly set up to support your API.
-Error Handling: Ensure that your API follows the existing error-handling patterns used in the backend.
+- [ ] Routing: Integrate the new /api/scrabble-score route into the current routing setup.
+- [ ] Configuration: Ensure any necessary configurations, such as environment variables or middleware, are correctly set up to support your API.
+- [ ] Error Handling: Ensure that your API follows the existing error-handling patterns used in the backend.
 
 Testing:
 If time permits, write unit tests for the API endpoint using a testing framework like Jest, or similar.
