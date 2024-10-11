@@ -1,4 +1,4 @@
-name: Test Frontend
+name: Test
 
 on:
   push:
@@ -34,6 +34,3 @@ jobs:
 
       - name: Validate
         run: yarn test-server
-
-      # - name: Upload coverage
-      #   uses: codecov/codecov-action@v4
