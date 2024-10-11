@@ -33,4 +33,4 @@ jobs:
         run: yarn install
 
       - name: Validate
-        run: yarn test-server
+        run: yarn test-server:ci

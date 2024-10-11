@@ -17,6 +17,7 @@
     "server": "nodemon server/index.js",
     "dev-server": "node-env-run server --exec nodemon | pino-colada",
     "test-server": "jest server --watch",
+    "test-server:ci": "jest server",
     "dev": "run-p server start dev-server "
   },
   "eslintConfig": {
